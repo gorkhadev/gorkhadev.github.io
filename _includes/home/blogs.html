@@ -1,0 +1,12 @@
+<section class="blogs-section section-padding">
+  <h1 class="section-heading">Learn from Blogs</h1>
+  <p class="section-subheading">Learn from my activities and experiences.</p>
+
+  <div class="container">
+    <div class="row justify-content-center pt-3">
+      {% for post in site.posts %}
+        {% include blogs/home-post-outline.html post=post %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

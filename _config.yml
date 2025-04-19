@@ -1,0 +1,47 @@
+title: XDev Portfolio
+email: gorkhadeveloper@gmail.com
+year: 2025
+motto: Code with Bravery.
+description: >-
+  I am a brave, hard working, disciplined, honest, loyal and profesisonal
+  Software Engineer and want to improve the lifestyle of people through
+  IT skills.   
+baseurl: ""
+url: "https://gorkhadev.github.io"
+asset_url: /assets
+thumbnail: thumbnail.jpg
+
+future: true # Show blog post of future date
+permalink: /blogs/:year/:month/:day/:title/
+
+google_analytics: # add google analytics ID here
+
+contacts:
+  linkedin:
+    url: https://www.linkedin.com/in/brgnepal
+    label: LinkdIn
+    class: fab fa-linkedin-in
+  facebook:
+    url: https://www.facebook.com/dhanusir
+    label: Facebook
+    class: fab fa-facebook-f
+  twitter:
+    url: https://twitter.com/brgnepal
+    label: Twitter
+    class: fab fa-twitter
+    username: "@brgnepal"
+  github:
+    url: https://github.com/dhanusir
+    label: GitHub
+    class: fab fa-github
+  email:
+    url: mailto:dhanusirofficial@gmail.com
+    label: Email
+    class: fas fa-envelope
+  youtube:
+    url: https://www.youtube.com/@dhanusir
+    label: YouTube Channel
+    class: fab fa-youtube
+
+# Build settings
+markdown: kramdown

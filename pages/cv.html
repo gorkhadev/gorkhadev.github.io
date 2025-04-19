@@ -1,0 +1,19 @@
+---
+layout: cv
+permalink: /cv/
+page_name: cv
+---
+
+{% include cv/career-profile.html %}
+
+{% unless site.data.cv.sidebar.education %}
+  {% include cv/education.html %}
+{% endunless %}
+
+{% include cv/experiences.html %}
+
+{% include cv/projects.html %}
+
+{% include cv/oss-contributions.html %}
+
+{% include cv/skills.html %}

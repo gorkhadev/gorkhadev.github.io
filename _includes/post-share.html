@@ -1,0 +1,27 @@
+<div class="share sticky-top-offset">
+  <h3 class="share-caption">
+    Share
+  </h3>
+  <ul>
+    <li class="mx-1">
+      <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | prepend: site.baseurl | prepend: site.url | uri_escape }}" target="_blank" title="Share on Twitter">
+        <i class="fa-brands fa-twitter fa-xl"></i>
+      </a>
+    </li>
+    <li class="mx-1">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | prepend: site.baseurl | prepend: site.url | uri_escape }}&title={{ page.title }}" target="_blank" title="Share on LinkedIn">
+        <i class="fa-brands fa-linkedin-in fa-xl"></i>
+      </a>
+    </li>
+    <li class="mx-1">
+      <a href="https://www.facebook.com/sharer.php?u={{ page.url | prepend: site.baseurl | prepend: site.url | uri_escape }}&title={{ page.title }}" target="_blank" title="Share on Facebook">
+        <i class="fa-brands fa-facebook-f fa-xl"></i>
+      </a>
+    </li>
+    <li class="mx-1">
+      <a href="mailto:?subject={{ page.title }}&amp;body=Check out this nice blog {{ page.url | prepend: site.baseurl | prepend: site.url | uri_escape }}" title="Share via Email">
+        <i class="fa-solid fa-envelope fa-xl"></i>
+      </a>
+    </li>
+  </ul>
+</div>

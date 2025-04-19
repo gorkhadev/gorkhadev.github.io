@@ -1,0 +1,19 @@
+---
+layout: default
+title: Blogs
+page_name: blog
+---
+
+<div class="blogs-page page-padding">
+  <h1 class="page-heading">Learn from Blogs</h1>
+
+  <div class="blogs-body">
+    <div class="container">
+      <div class="row">
+        {% for post in site.posts %}
+          {% include blogs/post-outline.html post=post %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

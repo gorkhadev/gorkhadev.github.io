@@ -1,0 +1,288 @@
+$color-primary: #000;
+$color-secondary: #2b2b2b;
+$site-color: #555;
+$text-color-secondary: #000;
+$smoky-white: #f1e2e2;
+
+
+$font-primary: "Red Hat Display", Helvetica, Arial, sans-serif;
+$font-secondary: "Red Hat Display", serif;
+
+html, body {
+  height: 100%;
+}
+body {
+  font-family: $font-primary;
+  font-size: 17px;
+  font-weight: 300;
+}
+main {
+  line-height: 30px;
+}
+code, kbd, pre, samp {
+  font-family: 'Fira Code', SFMono-Regular,Menlo,Monaco,Consolas,monospace;
+  font-size: 15.5px;
+  line-height: 22px;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+// HTML elements overrides
+a {
+  text-decoration: none !important;
+}
+textarea {
+  resize: none;
+}
+
+// Bootstrap CSS overrires
+.btn {
+  border-radius: 0;
+}
+
+// Utility Classes
+.page-padding {
+  padding: 4rem 0 8rem 0;
+}
+.section-padding {
+  padding: 8rem 0;
+}
+.page-heading {
+  font-family: $font-secondary;
+  color: $color-primary;
+  text-align: center;
+  font-size: 3.5rem;
+}
+.page-subheading {
+  font-family: $font-primary;
+  text-align: center;
+  color: #444;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: -1rem;
+}
+.section-heading {
+  font-family: $font-secondary;
+  color: $color-primary;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.section-subheading {
+  text-align: center;
+  color: #444;
+  font-size: 20px;
+}
+
+.navbar {
+  // background-color: #003594;
+  padding: 1rem;
+
+  .brand {
+    font-size: 3rem;
+    color: #000;
+    font-family: $font-secondary;
+    font-weight: 800;
+    line-height: 24px;
+
+    img {
+      height: 70px;
+    }
+  }
+  .navbar-nav .nav-item {
+    .dropdown {
+      .dropdown-menu {
+        border-color: $color-primary;
+
+        .dropdown-item {
+          color: $color-primary;
+        }
+      }
+    }
+    .nav-link {
+      padding: 1rem 1rem 0.5rem 1rem;
+      font-size: 15px;
+      font-weight: 400;
+      color: $color-primary;
+    }
+  }
+  .navbar-nav .nav-item.active .nav-link,
+    .navbar-nav .nav-item:hover .nav-link {
+    border-bottom: 1px solid $color-primary;
+    color: $color-primary;
+  }
+  .navbar-toggler {
+    border: 1px solid #fff;
+    font-size: 20px;
+    padding: 0.125rem 0.25rem;
+  }
+}
+
+
+// Footer Classes
+.social-contacts {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+
+  a i {
+    font-size: 2rem;
+  }
+}
+
+// Page Top
+// TODO: Fix the goto top page feature
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 23%;
+  right: 4%;
+  overflow: hidden;
+  z-index: 999;
+  width: 32px;
+  height: auto;
+  border: none;
+  text-indent: 100%;
+}
+#toTopHover {
+  width: 32px;
+  height: 32px;
+  display: block;
+  overflow: hidden;
+  float: right;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+// stay connected section
+.stay-connected-section {
+  background-color: $color-primary;
+  color: #fff;
+}
+
+// share page in missions, courses
+.sidebar-share-page {
+  h5 {
+    font-size: 16px;
+  }
+  .badge {
+    display: inline-block;
+  }
+  .twitter-share {
+    background-color: #55acee;
+  }
+  .facebook-share {
+    background-color: #3b5998;
+  }
+  .linkedin-share {
+    background-color: #0077B5;
+  }
+  a {
+    font-weight: 300;
+  }
+  .email-share {
+    background-color: #999;
+
+    &:hover {
+      color: #fff;
+    }
+
+    svg {
+      height: 12px;
+    }
+  }
+}
+
+// footer css
+.footer-section {
+  background: #000;
+
+  .footer-text {
+    font-family: $font-secondary;
+    font-size: 30px;
+    color: #fff;
+    line-height: 25px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .footer-tagline {
+    color: yellow;
+    font-size: 13px;
+    font-style: italic;
+  }
+  .footer-social {
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+// responsive code
+@media screen and (max-width: 520px) {
+  .navbar {
+    padding: 1rem 0;
+
+    .navbar-toggler {
+      border: 1px solid #555;
+      padding: 8px;
+      margin-top: -10px;
+    }
+    .navbar-collapse {
+      text-align: center;
+
+      .navbar-nav {
+        display: inline-block;
+        margin-top: 8px;
+      }
+    }
+    .navbar-toggler:focus, .navbar-toggler:active {
+      border: 0;
+      outline: none;
+    }
+
+    .brand {
+      font-size: 2rem;
+
+      img {
+        height: 45px;
+      }
+    }
+  }
+
+  .page-heading {
+    font-size: 3rem;
+    padding: 0 1rem;
+  }
+  .section-heading {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+  }
+  .section-subheading {
+    padding: 0 1rem;
+  }
+  .section-padding {
+    padding: 5rem 0;
+  }
+  .social-contacts {
+    margin-top: 1rem;
+  }
+  .stay-connected-section {
+    padding: 4rem 0;
+    text-align: center;
+  }
+  .congrats-wrapper {
+    .image-caption-wrapper {
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      h2 {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
