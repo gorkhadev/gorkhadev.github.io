@@ -9,7 +9,7 @@
       <h5 class="card-title">{{ include.post.title }}</h5>
       <p class="card-text">
         {{ include.post.content | strip_html | truncate: 110 }}
-        <a href="{{ include.post.url | prepend: site.url }}" class="text-success ml-3">Read more &#8594;</a>
+        <a href="{{ include.post.url | prepend: site.url }}" class="text-dark fw-bold ml-3">Read more &#8594;</a>
       </p>
     </div>
   </div>
