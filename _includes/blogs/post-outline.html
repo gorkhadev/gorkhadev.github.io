@@ -10,7 +10,7 @@
       <p class="card-text">
         {{ include.post.content | strip_html | truncate: 100 }}
         <br>
-        <a href="{{ include.post.url | prepend: site.url }}" class="text-success mt-2 d-block">Read more &#8594;</a>
+        <a href="{{ include.post.url | prepend: site.url }}" class="text-dark fw-bold mt-2 d-block">Read more &#8594;</a>
       </p>
     </div>
     <div class="card-footer p-4 d-flex justify-content-between">
